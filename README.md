@@ -48,6 +48,22 @@ or interactive runner:
 npm.cmd run test:e2e:open
 ```
 
+## WebdriverIO
+
+Run all WDIO specs:
+
+```bash
+npm.cmd run test:wdio
+```
+
+Run WDIO scaffold-only specs:
+
+```bash
+npm.cmd run test:wdio:scaffold
+```
+
+WDIO uses `wdio.conf.js` and serves the standalone app from `standalone/` via static server service.
+
 ## Interview exercise mode
 
 Run standalone app with:

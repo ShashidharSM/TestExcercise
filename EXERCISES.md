@@ -29,10 +29,15 @@ This project includes an intentional bug-hunt mode for candidates.
   - `npm.cmd run test:e2e:exercise`
 - Candidate scaffold suite (skipped TODO tests):
   - `npm.cmd run test:e2e:scaffold`
+- WDIO full suite:
+  - `npm.cmd run test:wdio`
+- WDIO scaffold suite (skipped TODO tests):
+  - `npm.cmd run test:wdio:scaffold`
 
 ## Files candidates will likely touch
 
 - `standalone/app.js`
 - `cypress/e2e/interview-exercises.cy.js`
 - `cypress/e2e/interview-candidate-scaffold.cy.js`
+- `wdio/specs/interview-candidate-scaffold.e2e.js`
 - `cypress/page-objects/shopPage.js`
