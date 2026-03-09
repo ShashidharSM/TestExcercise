@@ -1,0 +1,200 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  background: #f4f7fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.login-page {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.login-card {
+  width: min(420px, 100%);
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgb(13 38 76 / 8%);
+}
+
+.login-card form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #9db2cf;
+}
+
+button {
+  cursor: pointer;
+  background: #0f4da8;
+  border-color: #0f4da8;
+  color: #fff;
+}
+
+.error-message {
+  color: #bb1f1f;
+}
+
+.exercise-badge {
+  display: inline-block;
+  margin: 0.25rem 0;
+  background: #fde68a;
+  border: 1px solid #f59e0b;
+  color: #7c2d12;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.shop-page {
+  padding: 1.25rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.shop-header {
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.product-card,
+.customization-section,
+.cart-section {
+  background: #ffffff;
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.product-card {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.customization-table,
+.hover-customization-table,
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.customization-table th,
+.customization-table td,
+.hover-customization-table th,
+.hover-customization-table td,
+.cart-table th,
+.cart-table td {
+  border: 1px solid #d0dbe9;
+  padding: 0.55rem;
+  text-align: left;
+}
+
+.hover-customization-table .hover-row {
+  transition: background-color 0.2s ease;
+}
+
+.hover-customization-table .hover-row:hover,
+.hover-customization-table .hover-row:focus-within {
+  background: #f7fbff;
+}
+
+.action-hint {
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.hover-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+
+.hover-row:hover .hover-actions,
+.hover-row:focus-within .hover-actions {
+  margin-top: 0.4rem;
+  max-height: 4rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hover-row:hover .action-hint,
+.hover-row:focus-within .action-hint {
+  opacity: 0.35;
+}
+
+.icon-action-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.55rem;
+  font-size: 0.86rem;
+}
+
+.action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 999px;
+  border: 1px solid rgb(255 255 255 / 60%);
+  background: rgb(255 255 255 / 20%);
+  font-weight: 700;
+}
+
+.hover-editor-panel {
+  margin: 0.85rem 0;
+  padding: 0.65rem;
+  border: 1px solid #bfd3eb;
+  border-radius: 8px;
+  background: #f7fbff;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.subtotal {
+  font-weight: 700;
+}
